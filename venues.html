@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venues - EventPro</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .venues-container {
+            padding: 50px 20px;
+        }
+        .venue-item {
+            display: flex;
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .venue-image {
+            flex: 1;
+            min-height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+        .venue-info {
+            flex: 1;
+            padding: 30px;
+        }
+        @media screen and (max-width: 768px) {
+            .venue-item {
+                flex-direction: column;
+            }
+            .venue-image {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">EventPro</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="venues.html" class="active">Venues</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 40vh;">
+        <h1>Our Venues</h1>
+        <p>Perfect Locations for Your Events</p>
+    </header>
+
+    <div class="venues-container">
+        <div class="venue-item">
+            <div class="venue-image" style="background-image: url('images/ballroom.jpg');"></div>
+            <div class="venue-info">
+                <h2>Grand Ballroom</h2>
+                <p>Capacity: 500 guests</p>
+                <p>Perfect for weddings, galas, and large corporate events.</p>
+                <a href="contact.html" class="cta-button">Book Now</a>
+            </div>
+        </div>
+
+        <div class="venue-item">
+            <div class="venue-info">
+                <h2>Garden Paradise</h2>
+                <p>Capacity: 200 guests</p>
+                <p>Beautiful outdoor venue for ceremonies and celebrations.</p>
+                <a href="contact.html" class="cta-button">Book Now</a>
+            </div>
+            <div class="venue-image" style="background-image: url('images/garden.jpg');"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EventPro. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
